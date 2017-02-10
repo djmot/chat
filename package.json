@@ -1,0 +1,19 @@
+{
+  "name": "chat-djmot",
+  "version": "1.0.0",
+  "description": "A WebSockets chat program",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "browserify -t reactify public/src/client.jsx -o public/build/client.js"
+  },
+  "author": "David Mason",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.0.0",
+    "express": "^4.14.1",
+    "reactify": "^1.1.1",
+    "ws": "^2.0.2"
+  }
+}
